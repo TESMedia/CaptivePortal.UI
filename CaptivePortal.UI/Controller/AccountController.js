@@ -13,7 +13,7 @@ myModule.controller('AccountController', ['$scope', 'AccountService','$rootScope
             AccountService.LoginUser($scope.registeruserobj).then(function (data) {
 
 
-                window.location.href = "/Index.html";
+                window.location.href = "views/Index.html";
             });
         }
            )
@@ -28,7 +28,7 @@ myModule.controller('AccountController', ['$scope', 'AccountService','$rootScope
             if (!!data || !!data.responseResultTls) {
 
 
-                window.location.href = "Views/Index.html";
+                window.location.href = "views/Index.html";
 
             }
             else {

@@ -3,10 +3,11 @@
     this.registerUser = function (userobject) {
        
         var registerData = {
-            username: userobject.Email,
+            username: userobject.UserName,
             email: userobject.Email,
             userpassword: userobject.Password,
-            ConfirmPassword: userobject.ConfirmPassword
+            ConfirmPassword: userobject.ConfirmPassword,
+            company_id:$rootScope.company_id
         };
 
         var URL = BaseUrl + "account/Register";
@@ -18,7 +19,7 @@
 
         var loginData = {
             UserName: userobject.UserName,
-            UserPassword: userobject.PassWord,
+            UserPassword: userobject.Password
 
         };
         $rootScope.UserName = userobject.username;
